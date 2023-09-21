@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f1b3;
+    color: #e38270;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .container,
+.section-two {
+    background-color: #e38270;
+    color: #f0f1b3;
+}
+
+header,
+main, 
+footer {
+    margin: 0;
+}
+
+header .container,
+section,
+footer {
+    padding: 2em;
+}
+
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+/* .section-two-image-container {
+    width: 90%;
+} */
+footer {
+    text-align: center;
+    color: #e38270;
+}
+h1 {
+    font-size: 1.75rem; 
+
+}
+h1 span {
+    display: block;
+    color: #f1c1b8;
+}
+h2,
+h1 span {
+    font-size: 1.3rem;
+}
+p {
+    padding-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #f0f1b3;
+    font-weight: 900;
+}
+.btn {
+    padding: 9px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 1.125em;
+}
+.btn-dark {
+    background-color: #e38270;
+    color: #f0f1b3;
+}
+.btn-mid {
+    background-color: #f1c1b8;
+    color:#e38270 ;
+}
+.btn-light{
+    background-color: #f0f1b3;
+    color: #e38270;
+}
+
+/* style */
+.feature-image,
+.main-image {
+    width: 80%;
+    margin: 0 10%;
+}
+
+/* navigation */
+nav a {
+    padding: 1em 0;
+}
+
+ul {
+    padding: 0;
+}
+
+
+@media (max-width: 767px){
+    ul li:not(:last-child){
+        border-bottom: 1px dotted #f0f1b3;
+    }
+    a {
+        display: block;
+    }
+    nav a:hover {
+        opacity: 0.7;
+    }
+    h1 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    h1 span,
+    h2 {
+        font-size: 1.1rem;
+    }
+    .btn {
+        padding: 9px 18px;
+    }
+}
+
+
+
+@media (min-width: 768px){
+
+    .section-two-image-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+    .feature-item {
+        flex-basis: 260px;
+        flex-grow: 1;
+        width: 100%;
+    }
+    nav ul,
+    header .container {    
+        display: flex;
+        align-items: center;
+    }
+    nav a {
+        margin-left: 1.5em;
+    }
+    header .container {
+        justify-content: space-between;
+    }
+    .btn {
+        margin-right: 9px;
+    }
+}
